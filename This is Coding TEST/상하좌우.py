@@ -19,7 +19,7 @@ for plan in positions:
             nx = x + dx[i]
             ny = y + dy[i]
 
-    if nx < 1 or ny < 1 or nx > N or ny > N:
+    if nx < 0 or ny < 0 or nx > N or ny > N:
         continue
     x, y = nx, ny
 print(x, y)
