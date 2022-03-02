@@ -4,7 +4,7 @@ class Solution:
         pt = dummy.next
         prev_node = dummy
         
-        while pt and pt.next:
+        while pt and pt.next:  
             current_node = pt
             next_node = current_node.next
             
