@@ -13,4 +13,4 @@ def solution(s):
     answer=' '.join(s)
     return answer
 
-print(solution('3people unFollowed me'))
+#print(solution('3people unFollowed me'))
