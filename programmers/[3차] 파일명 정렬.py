@@ -3,14 +3,16 @@
 def solution(files):
     answer = []
     for f in files:
-        head, number, tail = '', '', ''
-
+        HEAD, NUMBER, TAIL = '', '', ''
         number_check = False
-        for i in range(len(f)): # 문자열 자르기
-            if f[i].isdigit():  # 처음 나오는 숫자부터는 NUMBER로
+        # 문자 열 대로
+        for i in range(len(f)):
+
+            if f[i].isdigit():
                 number += f[i]
                 number_check = True
-            elif not number_check:  # NUMBER가 나오기 전까지는 HEAD
+            # 숫자 나올때 까지 HEAD로
+            elif not number_check:  
                 head += f[i]
             else:               # NUMBER가 이미 나왔고, 숫자가 아닌 문자가 나오면 TAIL
                 tail = f[i:]
